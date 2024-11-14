@@ -23,7 +23,7 @@ test.describe("CaterOrange User", () => {
     }
   );
 
-  test.only("Login", async () => {
+  test("Login", async () => {
     await login(page);
     await expect(page).toHaveTitle("CaterOrange");
   });
