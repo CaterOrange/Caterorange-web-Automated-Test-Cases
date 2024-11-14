@@ -9,13 +9,7 @@ test.describe("CaterOrange User", () => {
     "create page",
     async ({ browser }) => {
       const context = await browser.newContext({
-        recordVideo: {
-          dir: "video/",
-          size: {
-            width: 640,
-            height: 480,
-          },
-        },
+        
       });
 
       page = await context.newPage();
